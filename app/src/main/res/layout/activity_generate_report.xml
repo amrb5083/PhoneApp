@@ -1,15 +1,20 @@
-<!-- Include necessary views and elements for the Generate Report page -->
+<!-- activity_generate_report.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Your content for the Generate Report page goes here -->
+    <TextView
+        android:id="@+id/generateReportContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Report Content"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:id="@+id/backToHomepageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Homepage"
-        android:layout_below="@id/your_content_id"
+        android:layout_below="@id/generateReportContent"
         android:layout_marginTop="16dp"/>
 </RelativeLayout>

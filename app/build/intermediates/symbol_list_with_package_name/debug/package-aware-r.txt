@@ -2798,6 +2798,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backToHomepageButton
 id backToLoginButton
 id barrier
 id baseline
@@ -2893,6 +2894,7 @@ id forever
 id fragment_container_view_tag
 id fullscreen_header
 id generateReportButton
+id generateReportContent
 id ghost_view
 id ghost_view_holder
 id gone
@@ -3075,6 +3077,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id settingsButton
+id settingsContent
 id shortcut
 id showCustom
 id showHome
@@ -3099,6 +3102,7 @@ id src_over
 id standard
 id start
 id startEvaluationButton
+id startEvaluationContent
 id startHorizontal
 id startToEnd
 id startVertical

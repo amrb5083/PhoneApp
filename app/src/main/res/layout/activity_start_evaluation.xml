@@ -1,15 +1,20 @@
-<!-- Include necessary views and elements for the Start Evaluation page -->
+<!-- activity_start_evaluation.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Your content for the Start Evaluation page goes here -->
+    <TextView
+        android:id="@+id/startEvaluationContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Evaluation Content"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:id="@+id/backToHomepageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Homepage"
-        android:layout_below="@id/your_content_id"
+        android:layout_below="@id/startEvaluationContent"
         android:layout_marginTop="16dp"/>
 </RelativeLayout>
