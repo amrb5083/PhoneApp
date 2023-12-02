@@ -41,6 +41,9 @@
         </activity>
         <activity android:name="com.example.phoneapp.RegistrationActivity" />
         <activity android:name="com.example.phoneapp.HomepageActivity" />
+        <activity android:name="com.example.phoneapp.StartEvaluationActivity" />
+        <activity android:name="com.example.phoneapp.GenerateReportActivity" />
+        <activity android:name="com.example.phoneapp.SettingsActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

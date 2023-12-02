@@ -2713,6 +2713,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pexels_sebastian_palomino_1955134
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -2891,6 +2892,7 @@ id floating
 id forever
 id fragment_container_view_tag
 id fullscreen_header
+id generateReportButton
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2909,6 +2911,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView2
 id indeterminate
 id info
 id invisible
@@ -3071,6 +3074,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingsButton
 id shortcut
 id showCustom
 id showHome
@@ -3094,6 +3098,7 @@ id src_in
 id src_over
 id standard
 id start
+id startEvaluationButton
 id startHorizontal
 id startToEnd
 id startVertical
@@ -3274,9 +3279,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_generate_report
 layout activity_homepage
 layout activity_main
 layout activity_registration
+layout activity_settings
+layout activity_start_evaluation
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

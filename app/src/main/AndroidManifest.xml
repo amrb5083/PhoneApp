@@ -27,6 +27,10 @@
         </activity>
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".HomepageActivity" />
+        <activity android:name=".StartEvaluationActivity" />
+        <activity android:name=".GenerateReportActivity" />
+        <activity android:name=".SettingsActivity" />
+
 
     </application>
 </manifest>

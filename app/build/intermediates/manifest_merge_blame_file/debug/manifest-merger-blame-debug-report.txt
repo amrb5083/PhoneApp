@@ -27,7 +27,7 @@
 18-->[androidx.core:core:1.9.0] C:\Users\super\.gradle\caches\transforms-3\1dc4e537ab8bb504569a422ebbb76397\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:9:5-31:19
+20-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:9:5-35:19
 21        android:allowBackup="true"
 21-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:10:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -72,28 +72,37 @@
 43        <activity android:name="com.example.phoneapp.HomepageActivity" />
 43-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:29:9-54
 43-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:29:19-51
-44
-45        <provider
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-46            android:name="androidx.startup.InitializationProvider"
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-47            android:authorities="com.example.phoneapp.androidx-startup"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-48            android:exported="false" >
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-49            <meta-data
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-51                android:value="androidx.startup" />
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+44        <activity android:name="com.example.phoneapp.StartEvaluationActivity" />
+44-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:30:9-61
+44-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:30:19-58
+45        <activity android:name="com.example.phoneapp.GenerateReportActivity" />
+45-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:31:9-60
+45-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:31:19-57
+46        <activity android:name="com.example.phoneapp.SettingsActivity" />
+46-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:32:9-54
+46-->C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:32:19-51
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+50            android:authorities="com.example.phoneapp.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 52            <meta-data
-52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\super\.gradle\caches\transforms-3\25302abbe71196102d18a4c603cf6832\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\super\.gradle\caches\transforms-3\25302abbe71196102d18a4c603cf6832\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 54                android:value="androidx.startup" />
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\super\.gradle\caches\transforms-3\25302abbe71196102d18a4c603cf6832\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-55        </provider>
-56    </application>
-57
-58</manifest>
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\super\.gradle\caches\transforms-3\8679a131afd0b014edc9a9a00548d26a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\super\.gradle\caches\transforms-3\25302abbe71196102d18a4c603cf6832\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\super\.gradle\caches\transforms-3\25302abbe71196102d18a4c603cf6832\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\super\.gradle\caches\transforms-3\25302abbe71196102d18a4c603cf6832\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+58        </provider>
+59    </application>
+60
+61</manifest>
