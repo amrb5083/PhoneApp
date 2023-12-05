@@ -37,7 +37,7 @@ class RegistrationActivity : AppCompatActivity() {
                     if (result != -1L) {
                         showToast("Account created successfully")
 
-                        db.removeEmptyEntries()
+                        //db.removeEmptyEntries()
 
                         val intent = Intent(this, HomepageActivity::class.java)
                         startActivity(intent)

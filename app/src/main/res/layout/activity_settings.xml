@@ -1,20 +1,42 @@
-<!-- activity_settings.xml -->
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <TextView
-        android:id="@+id/settingsContent"
+    <EditText
+        android:id="@+id/editTextNewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Username"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextNewUsername"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings Content"
-        android:layout_centerInParent="true"/>
+        android:text="Update"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextNewPassword"
+        android:layout_marginTop="24dp"/>
 
     <Button
         android:id="@+id/backToHomepageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Homepage"
-        android:layout_below="@id/settingsContent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonUpdate"
         android:layout_marginTop="16dp"/>
+
 </RelativeLayout>

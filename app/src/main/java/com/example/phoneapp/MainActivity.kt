@@ -1,6 +1,7 @@
 package com.example.phoneapp
 
 import android.content.Intent
+import android.content.Context
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -22,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         val loginButton: Button = findViewById(R.id.loginButton)
         val createAccountButton: Button = findViewById(R.id.createAccountButton)
 
-        // Existing logic for login button
         loginButton.setOnClickListener {
             val username = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
@@ -31,41 +31,16 @@ class MainActivity : AppCompatActivity() {
 
             if (user != null && user.password == password) {
                 showToast("Login Successful")
-
-                // Redirect to the homepage after successful login
+                storeUserId(user.id)
                 val intent = Intent(this, HomepageActivity::class.java)
                 startActivity(intent)
-                finish() // Optional: Close the login activity
+                finish()
             } else {
                 showToast("Invalid username or password")
             }
         }
 
-        // Existing logic for createAccountButton (with corrected indentation)
         createAccountButton.setOnClickListener {
-            // Corrected indentation for existing logic
-            /*
-            val username = usernameEditText.text.toString()
-            val password = passwordEditText.text.toString()
-
-            val existingUser = db.getUser(username)
-
-            if (existingUser == null) {
-                // User doesn't exist, proceed with registration
-                val result = db.addUser(username, password)
-
-                if (result != -1L) {
-                    showToast("Account created successfully")
-                } else {
-                    showToast("Failed to create account")
-                }
-            } else {
-                // User already exists, show a message or handle accordingly
-                showToast("Username already exists. Please choose a different username.")
-            }
-            */
-
-            // New logic for createAccountButton
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
         }
@@ -73,5 +48,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun storeUserId(userId: Int) {
+        val sharedPref = getSharedPreferences("MyApp", Context.MODE_PRIVATE)
+        with(sharedPref.edit()) {
+            putInt("LoggedInUserId", userId)
+            apply()
+        }
     }
 }

@@ -5,7 +5,6 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-
 class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
     companion object {
@@ -18,10 +17,10 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
     }
 
     override fun onCreate(db: SQLiteDatabase) {
-        val createTableQuery = ("CREATE TABLE $TABLE_USERS ("
-                + "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + "$COLUMN_USERNAME TEXT, "
-                + "$COLUMN_PASSWORD TEXT)")
+        val createTableQuery = "CREATE TABLE $TABLE_USERS (" +
+                "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "$COLUMN_USERNAME TEXT, " +
+                "$COLUMN_PASSWORD TEXT)"
         db.execSQL(createTableQuery)
     }
 
@@ -37,8 +36,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         values.put(COLUMN_PASSWORD, password)
         return db.insert(TABLE_USERS, null, values)
     }
-
-
     fun getUser(username: String): User? {
         val db = this.readableDatabase
         val cursor = db.query(
@@ -47,42 +44,27 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             null, null, null, null
         )
 
-        return try {
-            if (cursor.moveToFirst()) {
-                User(
-                    cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID)),
-                    cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_USERNAME)),
-                    cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PASSWORD))
-                )
-            } else {
-                null
-            }
-        } catch (e: Exception) {
-            // Handle exceptions, log, or return null as needed
-            null
-        } finally {
-            cursor.close()
-        }
-    }
-    fun removeEmptyEntries() {
-        val db = this.writableDatabase
-        db.delete(TABLE_USERS, "$COLUMN_USERNAME = '' OR $COLUMN_PASSWORD = ''", null)
-    }
-
-    /*
-    return if (cursor.moveToFirst()) {
+        if (cursor != null && cursor.moveToFirst()) {
             val user = User(
-                cursor.getInt(cursor.getColumnIndex(COLUMN_ID)),
-                cursor.getString(cursor.getColumnIndex(COLUMN_USERNAME)),
-                cursor.getString(cursor.getColumnIndex(COLUMN_PASSWORD))
+                cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID)),
+                cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_USERNAME)),
+                cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PASSWORD))
             )
             cursor.close()
-            user
-        } else {
-            cursor.close()
-            null
+            return user
         }
+        cursor?.close()
+        return null
     }
-*/
+
+    fun updateUser(userId: Int, newUsername: String, newPassword: String): Boolean {
+        val db = this.writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_USERNAME, newUsername)
+            put(COLUMN_PASSWORD, newPassword)
+        }
+        return db.update(TABLE_USERS, values, "$COLUMN_ID = ?", arrayOf(userId.toString())) > 0
+    }
+
     data class User(val id: Int, val username: String, val password: String)
 }
