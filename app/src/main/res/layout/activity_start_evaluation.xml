@@ -3,18 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/startEvaluationContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Evaluation Content"
-        android:layout_centerInParent="true"/>
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
 
     <Button
         android:id="@+id/backToHomepageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Homepage"
-        android:layout_below="@id/startEvaluationContent"
-        android:layout_marginTop="16dp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Removed the TextView as it's no longer necessary -->
 </RelativeLayout>

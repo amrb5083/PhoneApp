@@ -17,13 +17,13 @@ id generateReportButton
 id generateReportContent
 id imageView2
 id loginButton
+id mapView
 id passwordEditText
 id passwordEditTextRegistration
 id registerButton
 id settingsButton
 id settingsContent
 id startEvaluationButton
-id startEvaluationContent
 id usernameEditText
 id usernameEditTextRegistration
 layout activity_generate_report
