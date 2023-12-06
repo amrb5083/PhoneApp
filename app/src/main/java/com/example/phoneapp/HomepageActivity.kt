@@ -27,5 +27,13 @@ class HomepageActivity : AppCompatActivity() {
         binding.settingsButton.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+
+        // Add Log Out Button
+        binding.logOutButton.setOnClickListener {
+            // Navigate back to the MainActivity
+            startActivity(Intent(this, MainActivity::class.java))
+            // Finish the current activity (HomepageActivity)
+            finish()
+        }
     }
 }

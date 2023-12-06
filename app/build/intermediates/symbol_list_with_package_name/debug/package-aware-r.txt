@@ -3125,6 +3125,7 @@ id blocking
 id bottom
 id bounce
 id buttonPanel
+id buttonUpdate
 id cancel_button
 id center
 id centerCrop
@@ -3137,6 +3138,7 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id clearDataButton
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3157,6 +3159,7 @@ id custom
 id customPanel
 id cut
 id dark
+id dataBinding
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3181,11 +3184,14 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drivingScoreContent
 id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
 id edge
+id editTextNewPassword
+id editTextNewUsername
 id edit_query
 id edit_text_id
 id elastic
@@ -3213,6 +3219,7 @@ id floating
 id forever
 id fragment_container_view_tag
 id fullscreen_header
+id generateDataButton
 id generateReportButton
 id generateReportContent
 id ghost_view
@@ -3256,6 +3263,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logOutButton
 id loginButton
 id m3_side_sheet
 id mapView
@@ -3333,6 +3341,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id open_search_bar_text_view
 id open_search_view_background
 id open_search_view_clear_button
@@ -3405,9 +3415,9 @@ id select_dialog_listview
 id selected
 id selection_type
 id settingsButton
-id settingsContent
 id shortcut
 id showCustom
+id showDataButton
 id showHome
 id showTitle
 id sin
@@ -3419,6 +3429,7 @@ id snap
 id snapMargins
 id spacer
 id special_effects_controller_view_tag
+id speedTextView
 id spline
 id split_action_bar
 id spread
@@ -3461,6 +3472,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

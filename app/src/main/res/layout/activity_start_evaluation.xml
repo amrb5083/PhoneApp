@@ -3,20 +3,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/clearDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Data"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/showDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Data"
+        android:layout_below="@id/clearDataButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_centerInParent="true" />
+        android:layout_below="@id/showDataButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/backToHomepageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Homepage"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/mapView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginTop="16dp"/>
 
-    <!-- Removed the TextView as it's no longer necessary -->
+    <!-- Add the Generate Data Button -->
+    <Button
+        android:id="@+id/generateDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Data"
+        android:layout_below="@id/backToHomepageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Add the TextView for Speed -->
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed: "
+        android:layout_below="@id/generateDataButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 </RelativeLayout>

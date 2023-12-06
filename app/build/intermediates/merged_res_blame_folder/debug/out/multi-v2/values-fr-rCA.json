@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.phoneapp-mergeDebugResources-32:/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "com.example.phoneapp-mergeDebugResources-36:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\super\\.gradle\\caches\\transforms-3\\4cd64306ff022343094f46628a559e07\\transformed\\play-services-base-18.1.0\\res\\values-fr-rCA\\values.xml",

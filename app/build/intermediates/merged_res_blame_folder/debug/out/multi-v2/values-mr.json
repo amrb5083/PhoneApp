@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.phoneapp-mergeDebugResources-32:/values-mr/values-mr.xml",
+            "outputFile": "com.example.phoneapp-mergeDebugResources-36:/values-mr/values-mr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\super\\.gradle\\caches\\transforms-3\\4cd64306ff022343094f46628a559e07\\transformed\\play-services-base-18.1.0\\res\\values-mr\\values.xml",
