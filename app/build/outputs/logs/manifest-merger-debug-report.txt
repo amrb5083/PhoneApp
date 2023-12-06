@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [androidx.databinding:databinding-adapters:8.2.0] C:\Users\super\.gradle\caches\transforms-3\4b33e8a53233c4af78c90c7b748e1e52\transformed\databinding-adapters-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.2.0] C:\Users\super\.gradle\caches\transforms-3\f7152fd4984f1646ba6d0d9153b16cf3\transformed\databinding-ktx-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.2.0] C:\Users\super\.gradle\caches\transforms-3\168d9640586f8234870340099659c854\transformed\databinding-runtime-8.2.0\AndroidManifest.xml:2:1-7:12
@@ -88,8 +88,8 @@ ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidMan
 	android:name
 		ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:9:22-78
 application
-ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:11:5-39:19
-INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:11:5-39:19
+ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:11:5-44:19
+INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:11:5-44:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\super\.gradle\caches\transforms-3\2267d41d52bd10abd9c1f1fa4f572c70\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\super\.gradle\caches\transforms-3\2267d41d52bd10abd9c1f1fa4f572c70\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\super\.gradle\caches\transforms-3\10c11e94a8690a8b0c6a6ebc7945fbc4\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -180,6 +180,12 @@ ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidMan
 		ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:38:13-68
 	android:name
 		ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:37:13-58
+meta-data#com.google.android.gms.maps.v2.API_KEY
+ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:40:9-42:71
+	android:value
+		ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:42:13-68
+	android:name
+		ADDED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml:41:13-66
 uses-sdk
 INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\super\AndroidStudioProjects\PhoneApp\app\src\main\AndroidManifest.xml

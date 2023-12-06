@@ -18,6 +18,7 @@ class GenerateReportActivity : AppCompatActivity() {
         binding = ActivityGenerateReportBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        val combinedAverageSpeed = SpeedDataManager.getCombinedAverageSpeed()
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
@@ -29,20 +30,19 @@ class GenerateReportActivity : AppCompatActivity() {
         }
 
         // Retrieve the average speed from SpeedDataManager
-        val averageSpeed = SpeedDataManager.averageSpeed
 
+        val averageSpeed = SpeedDataManager.getCombinedAverageSpeed()
+        println("Average Speed (GenerateReportActivity): $averageSpeed")
         // Display the average speed on the screen
-        binding.generateReportContent.text = "Average Speed: ${String.format("%.2f", averageSpeed)} km/h"
 
+        binding.generateReportContent.text = "Average Speed: ${String.format("%.2f", combinedAverageSpeed)} km/h"
         // Calculate the driving score based on the average speed
-        val drivingScore = calculateDrivingScore(averageSpeed)
+        val drivingScore = calculateDrivingScore(combinedAverageSpeed)
 
         // Display the driving score on the screen
         binding.drivingScoreContent.text = "Driving Score: $drivingScore"
-
         // Additional logging for debugging
-        println("Average Speed: $averageSpeed, Driving Score: $drivingScore")
-    }
+        println("Average Speed: $combinedAverageSpeed, Driving Score: $drivingScore")    }
 
     private fun calculateDrivingScore(averageSpeed: Double): Int {
         if (averageSpeed < 20 || averageSpeed > 100) {

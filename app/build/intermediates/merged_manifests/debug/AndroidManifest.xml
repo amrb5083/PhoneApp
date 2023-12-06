@@ -60,6 +60,10 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAwLdS7PpmDl2Glt0nDz9gF3117VLKIe-4" />
+        <meta-data
+            android:name="com.google.android.gms.maps.v2.API_KEY"
+            android:value="AIzaSyAwLdS7PpmDl2Glt0nDz9gF3117VLKIe-4" />
+
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"

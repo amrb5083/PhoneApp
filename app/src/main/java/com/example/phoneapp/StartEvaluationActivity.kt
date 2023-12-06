@@ -1,6 +1,7 @@
 // StartEvaluationActivity.kt
 package com.example.phoneapp
 
+import SpeedDataManager
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -17,6 +18,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.model.LatLng
 import com.example.phoneapp.databinding.ActivityStartEvaluationBinding
 import android.content.Intent
+import kotlin.math.roundToInt
 
 class StartEvaluationActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -67,22 +69,24 @@ class StartEvaluationActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Add your code to handle generating data when the button is clicked
         generateDataButton.setOnClickListener {
-            // Generate a random speed between 30 and 65 km/h
-            val randomSpeed = (0..200).random().toDouble()
+            // Generate a list of 15 random speeds between 30 and 65 km/h
+            val randomSpeeds = List(15) { (30..65).random().toDouble() }
 
-            // Display the generated speed in the speedTextView
-            speedTextView.text = "Generated Speed: $randomSpeed km/h"
+            // Display the generated speeds in the speedTextView
+            speedTextView.text = "Generated Speeds: ${randomSpeeds.joinToString(", ")}"
 
             // Insert the generated data into the database
-            drivingDataHelper.insertTestData(currentTestNumber, listOf(randomSpeed))
-
-            // Add the generated speed to the list
-            allSpeeds.add(randomSpeed)
+            drivingDataHelper.insertTestData(currentTestNumber, randomSpeeds)
 
             // Increment the test number for the next data point
             currentTestNumber++
-        }
 
+            // Calculate the average speed for the current set of data
+            val averageSpeed = randomSpeeds.average()
+            SpeedDataManager.setCombinedAverageSpeed(averageSpeed)
+            // Print the generated speeds and average speed for debugging
+            println("Generated Speeds: $randomSpeeds, Average Speed: $averageSpeed")
+        }
         // Add your code for clearing all data when the button is clicked
         clearDataButton.setOnClickListener {
             // Clear the list of all speeds
@@ -94,13 +98,12 @@ class StartEvaluationActivity : AppCompatActivity(), OnMapReadyCallback {
             // Retrieve all data from the database
             val testDataList = drivingDataHelper.getAllData()
 
-            // Calculate the combined average speed
+            // Calculate the combined average speed from allSpeeds
             if (testDataList.isNotEmpty()) {
                 val combinedSpeeds = testDataList.flatMap { it.speeds }
                 val combinedAverageSpeed = combinedSpeeds.average()
 
-                // Store the average speed in SpeedDataManager
-                SpeedDataManager.averageSpeed = combinedAverageSpeed
+                SpeedDataManager.setCombinedAverageSpeed(combinedAverageSpeed)
 
                 // Update the SpeedTextView with the combined average speed
                 speedTextView.text = "Combined Average Speed: ${String.format("%.2f", combinedAverageSpeed)} km/h"
