@@ -1,0 +1,29 @@
+<!-- activity_generate_report.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/generateReportContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Report Content"
+        android:layout_centerInParent="true"/>
+
+    <!-- Add the TextView for displaying the driving score -->
+    <TextView
+        android:id="@+id/drivingScoreContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driving Score: 0"
+        android:layout_below="@id/generateReportContent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/backToHomepageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Homepage"
+        android:layout_below="@id/drivingScoreContent"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

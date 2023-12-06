@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.phoneapp-mergeDebugResources-37:/layout/activity_registration.xml",
+        "source": "com.example.phoneapp-main-40:/layout/activity_registration.xml"
+    },
+    {
+        "merged": "com.example.phoneapp-mergeDebugResources-37:/layout/activity_generate_report.xml",
+        "source": "com.example.phoneapp-main-40:/layout/activity_generate_report.xml"
+    },
+    {
+        "merged": "com.example.phoneapp-mergeDebugResources-37:/layout/activity_main.xml",
+        "source": "com.example.phoneapp-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.phoneapp-mergeDebugResources-37:/layout/activity_start_evaluation.xml",
+        "source": "com.example.phoneapp-main-40:/layout/activity_start_evaluation.xml"
+    },
+    {
+        "merged": "com.example.phoneapp-mergeDebugResources-37:/layout/activity_settings.xml",
+        "source": "com.example.phoneapp-main-40:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.phoneapp-mergeDebugResources-37:/layout/activity_homepage.xml",
+        "source": "com.example.phoneapp-main-40:/layout/activity_homepage.xml"
+    }
+]
